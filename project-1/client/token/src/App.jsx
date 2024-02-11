@@ -22,7 +22,7 @@ function Button(){
     if (value === "") window.alert("kindly Enter Your Token");
     else{
       try {
-        const response = await axios.get('http://localhost:3003/');
+        const response = await axios.get('https://backend-chi-puce.vercel.app/');
         console.log(response.data); 
         let a = 0;
         response.data.forEach((data)=>{
