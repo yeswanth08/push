@@ -19,7 +19,7 @@ function Button(){
   }
   
   const validate = async () => { 
-    if (value === "") window.alert("kindley Enter Your Token");
+    if (value === "") window.alert("kindly Enter Your Token");
     else{
       try {
         const response = await axios.get('http://localhost:3003/');
