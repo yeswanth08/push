@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState,memo} from 'react'
 import axios from 'axios'
 import './App.css'
 
@@ -10,7 +10,8 @@ function App() {
   )
 }
 
-function Button(){
+
+const Button=memo(function Button(){
   const [value, setvalue] = useState("")
   
   // ships the value
@@ -40,10 +41,10 @@ function Button(){
   
   return(
     <>
-      <input type="text" placeholder="Enter Your Token Name" value={value} onChange={change}/><br/>
-      <button onClick={validate}>Verify</button>
+      <input id='input' type="text" placeholder="Enter Your Token Name" value={value} onChange={change}/><br/>
+      <button id="btn" onClick={validate}>Verify</button>
     </>
   )
 }
-
+)
 export default App
