@@ -1,0 +1,10 @@
+# ignore all the files in bin and nodemodules
+
+bin/
+node_modules/
+
+## /text for file  dir/ for folder
+
+/tsconfig.json
+
+## npx tsc --init
