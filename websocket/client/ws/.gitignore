@@ -1,0 +1,9 @@
+# ignore some files
+
+node_modules/
+
+/index.html
+/vite.config.js
+/package.json
+/.eslintrc.cjs
+/package-lock.json
