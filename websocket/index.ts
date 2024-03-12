@@ -19,4 +19,5 @@ io.on('connection',(socket:Socket)=>console.log(socket.id));
 
 app.get('/',(req:Request,res:Response)=>{
     res.sendFile(filepath);
-})
+});
+
